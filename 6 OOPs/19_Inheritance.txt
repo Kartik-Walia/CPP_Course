@@ -1,0 +1,38 @@
+INHERITANCE IN C++ OVERVIEW 
+- Reusability is a very important feature of OOPs 
+- In C++ we can reuse a class and add additional features to it 
+- Resuing class saves time and money 
+- Reusing already tested and debugged class will save lot of effort of developing and debugging the same thing 
+
+
+WHAT IS INHERITANCE IN C++ ?
+- The concept of reusability in C++ is supported using Inheritance 
+- We can reuse the properties of an existing class by inheriting from it 
+- The existing class is called as the Base class 
+- The new class whic is inherited is called as the Derived class 
+
+
+SYMBOLS IN DIAGRAMATIC REPRESENTATION OF INHERITANCE 
+Downward arrow -> Above derives below 
+Upward arrow -> Below is derived from above 
+
+
+FORMS OF INHERITANCE IN C++ 
+- Single Inheritance
+    Derived class with only 1 base class 
+    Eg: Employee -> Programmer 
+- Multiple Inheritance 
+    Derived class with more than 1 base class 
+    Eg: Employee & Assistant -> Programmer 
+- Hierarchial Inheritance 
+    Several derived classes from a single base class 
+    Eg: Employee -> Programmer & Manager 
+- Multilevel Inheritance 
+    Deriving a class from already derived class 
+    Eg: Animal -> Mammal -> Cow
+- Hybrid Inheritance
+    Combination of Multiple Inheritance and Multilevel Inheritance 
+    A class is derived from 2 classes as in multiple inheritance 
+    However, one of the parent classes is not a base class 
+    Any class can be the parent but base class is always 1 (the senior most)
+    Eg: Animal -> Mammal & Bird -> Bat  
