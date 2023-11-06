@@ -1,0 +1,25 @@
+POLYMORPHISM 
+One name many forms 
+- Function Overloading 
+- Operator Overloading 
+- Virtual Functions 
+
+
+TYPES OF POLYMORPHISM 
+1. Compile Time Polymorphism 
+    Decision about which function to call is taken in compile time itself 
+    Also known as Early (or Static) Binding 
+    Binding means which object will call which function 
+    Binding is done in compile time 
+
+    In C++, Compile Time Polymorphism is achieved in 2 ways :
+    A. Function Overloading 
+    B. Operator Overloading 
+2. Run Time Polymorphism 
+    Compiler postpones dicsion of which function to call i.e. It defers the linking of function call in runtime
+    After compilinmg, when you will execute program, then you would get to know which function is about to run 
+    according to the type of your pointer
+    No binding takes place in runtime polymorphism
+    Also known as Late Binding
+
+    In C++, Run Time Polymorphism is achieved with help of virtual functions 
