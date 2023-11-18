@@ -1,0 +1,33 @@
+object ke liye template "class" hai 
+class ke liye template "Template" hai 
+
+
+Template iss tarah se banti hai ki mai class ko 1 baar bnaunga aur alag alag datatypes ke liye classes jo hai 
+vo automatically bn jayengi 
+In our code, there would be only 1 template but i can use that template for different datatypes & it behaves 
+like i have defined different classes, thatswhy sometimes templates are called "Parameterized classes"
+Here, parameter is the datatype 
+
+
+WHY USE TEMPLATES ?
+1. DRY (Don't Repeat Youself) Principle doesn't gets violated
+2. Generic Programming can be done (1 class is generalized for all datatypes)
+
+
+SYNTAX FOR TEMPLATES (T can be int, float, char etc.)
+template <class T>
+class vector{
+    T *arr;
+
+    public:
+    vector(T *arr) {code}
+    {many other methods}
+}
+
+int main() {
+    vector<int> myVec(ptr);     
+    vector<float> myfVec(ptr);
+
+    // So, i used different classes coming from the same template, for both above datatypes
+    // Above defination is not just 1 class, it's representign many classes 
+}
