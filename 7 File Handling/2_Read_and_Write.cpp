@@ -6,6 +6,21 @@ The useful classes for working with files in C++ are:
 1. fstreambase
 2. ifstream --> derived from fstream
 3. ofstream --> derived from fstream
+All these classes are present in fstream header file.
+*/
+
+/*
+=========================================== FILE OPERATIONS ===========================================
+
+Read Operation
+ifstream in("file_name");
+string st;
+in >> st;   // Just like cin
+
+Write Operation
+ofstream out("file_name");
+string st = "Kartik here";
+out << st;   // Just like cout
 */
 
 // In order to work with files, you'll have to open it. Primarily, there are 2 ways to open a file:
