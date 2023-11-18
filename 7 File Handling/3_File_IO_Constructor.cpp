@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     // Connecting our file with kout stream 
-    ofstream kout("Sample.txt");
+    ofstream kout("ConstructorSample.txt");
 
     // Creating a name string & taking name from user
     string name;
@@ -16,7 +16,7 @@ int main(){
     kout << "My name is " + name << endl;
     kout.close();   // Cutted the link to the file we created above 
 
-    ifstream kin("Sample.txt");
+    ifstream kin("ConstructorSample.txt");
     string content;
     // kin >> content; // This doesn't consider anything after space, to consider space you can use getline func.
     getline(kin, content);
