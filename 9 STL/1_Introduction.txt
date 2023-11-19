@@ -1,5 +1,6 @@
 STL - Standard Template Library 
 It's a library of generic classes and functions 
+STL = Conatiners + Algorithms +Iterators
 
 
 WHY USE STL ?

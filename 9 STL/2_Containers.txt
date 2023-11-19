@@ -1,0 +1,32 @@
+TYPES OF CONTAINERS 
+1. Sequence Containers
+    Stores data in Linear Fashion
+    Eg: vector, list, dequeue, etc.
+2. Associative Containers 
+    Desgined in such a way to get faster access of elements, direct access 
+    In associative container, you can't do random access, so access becomes slow
+    Eg: set, multiset, map, multimap, etc.
+3. Derived Containers
+    Derived from either Sequence or Associative Containers 
+    Real world modelling 
+    Eg: stack, queue, priority_queue 
+
+
+SEQUENCE CONATINERS 
+1. Vector 
+    Random access = Fast
+    Middle insertion/deletion = Slow
+    Insertion at end = Fast 
+2. List (Linked Lists)
+    Random access = Slow 
+    Middle insertion/deletion = Fast 
+    Insertion at end = Fast 
+
+
+ASSOCIATIVE CONATINERS 
+Searching, Inserting, Deleting... 
+All operations are fast except random access (bcoz it stores in form of tree)
+
+
+DERIVED CONTAINERS 
+Depends on data structure 
