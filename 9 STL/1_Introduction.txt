@@ -1,0 +1,24 @@
+STL - Standard Template Library 
+It's a library of generic classes and functions 
+
+
+WHY USE STL ?
+- Reuse : Well tested components
+- Saves time!
+STL is used bcoz it's a good idea not to reinvent the wheel
+
+
+COMPONENTS OF STL 
+1. Containers
+    These are already implemented classes which we can use by including the library 
+    They use template classes 
+    It's an object which stores data
+    Eg: vector, etc.
+2. Algorithms 
+    Set of procedure which is used to manipulate data to get to the result 
+    They use template functions
+    Eg: seraching, sorting, etc.
+3. Iterators
+    It's an object which points to an element in a container 
+    Handled just like pointers (but it's an opbject)
+    It connects Algorithms with Containers & plays a major role in data manipulation 
