@@ -14,7 +14,7 @@ int main()
     c = a + b;
     cout << "The sum is " << c << endl;
 
-    // Let's say for some reason i wanna print global c here, so we can use scopre resolution operator for this
+    // Let's say for some reason i wanna print global c here, so we can use scope resolution operator for this
     // So by using scope resolution operator you can access global variables value
     cout << "The global c is " << ::c << endl;
 
@@ -41,7 +41,7 @@ int main()
     cout << "The size of 34.4L is " << sizeof(34.4L) << endl;
 
     // ========================================= REFERENCE VARIABLES =========================================
-    // When we want i=that value in our program should be called with 2 diffferent references, then we use
+    // When we want that value in our program should be called with 2 diffferent references, then we use
     // reference variable
     float x = 455;
     float &y = x; // Mai y ko ek reference variable bna na chahta hun joki x ko point krta hai
@@ -54,13 +54,13 @@ int main()
     int p = 45;
     float q = 45.46;
     cout << "Value of p is " << p << endl;
-    cout << "Value of p is " << (float)p << endl; // int a is typecasted to float
+    cout << "Value of p is " << (float)p << endl; // int p is typecasted to float
     cout << "Value of p is " << float(p) << endl; // This is just another way to represent above line
 
     cout << "Value of q is " << (int)q << endl; // float b is typecasted to int
     cout << "Value of q is " << int(q) << endl; // This is just another way to represent above line
 
-    c = int(q); // c is used to store integer value of b
+    c = int(q); // c is used to store integer value of q
     cout << "Value of c is " << c << endl;
 
     cout << "The expression p + q is " << p + q << endl;

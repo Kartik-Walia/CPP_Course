@@ -1,4 +1,4 @@
-// C++ comes with libraries which helps us in pforming input/output.
+// C++ comes with libraries which helps us in performing input/output.
 // In C++ sequence of bytes corresponding to input and output are commonly known as streams.
 
 // Input stream: Direction of flow of bytes takes place from input device (eg: keyboard) to main memory
@@ -11,9 +11,9 @@ using namespace std;
 int main()
 {
     int num1, num2;
-    // << is called Insertion operator
-    cout << "Enter value of num1 \n";
     // << is called Extraction operator
+    cout << "Enter value of num1 \n";
+    // >> is called Insertion operator
     cin >> num1;
 
     cout << "Enter value of num2 \n";

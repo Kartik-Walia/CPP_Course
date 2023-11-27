@@ -13,7 +13,7 @@
 #include <iostream>
 
 using namespace std;
-int glo = 6;
+int glo = 6;    // Global variable
 
 void sum()
 {
