@@ -1,0 +1,55 @@
+WHAT ARE EXCEPTIONS ?
+Exceptions are the unexpected situations that arise during the execution of a program.
+These exceptions exhibit odd behaviour ina  program that should be taken care of.
+
+
+WHY DO WE NEED EXCEPTION HANDLING ?
+Exception Hanlding provides a mechanism through which we can handle the error generating part separately 
+from the rest of the code.
+It provides the information to the suer, so that he/she can detect the mistake and correct it.
+
+
+WHAT IS EXCEPTION HANDLING IN C++ ?
+Exception Handling helps in dealing with exceptions by transferring the control from one part of the 
+program to another and takes care of the exception by providing certain code.
+
+
+KEYWORDS OF EXCEPTION HANDLING 
+Exceptions are handled with the help of 3 keywords.
+1. Try : This part assumes that error will take place.
+2. Catch : This part identifies which exception has occured and tries to catch it.
+3. Throw : When the program encounters an issue, it throws an exception.
+
+
+SYNTAX 
+try {
+    // try block code 
+}
+catch (Exception_Name exception1){
+    // catch block
+}
+catch (Exception_Name exception2){
+    // catch block
+}
+catch (Exception_Name exception3){
+    // catch block
+}
+
+
+TRY BLOCK 
+Try blocks are used to enclose the statements which may cause the exceptions.
+The try block is followed up by 1 or more than 1 catch blocks.
+The exceptions will be thrown from the try block towards the catch block.
+
+
+CATCH BLOCK
+Handling these exceptions is teh actual job of the catch block. 
+This block catches the exception thrown from the try block.
+
+Both the try and catch blocks work together. 
+Every try block has atleast 1 catch block attached to it.
+
+
+THROW STATEMENT 
+The throw statement is used to throw an exception and its value to a consecutive exception handler.
+Whenever a program experiences an issue, the throw keyword assists the program by performing the operation.
