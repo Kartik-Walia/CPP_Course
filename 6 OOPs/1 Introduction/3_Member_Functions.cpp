@@ -1,6 +1,6 @@
 // ==================================== OOPs - Classes and Objects ====================================
 /*
-C++ --> Initialyy called C with classes by stroustroup
+C++ --> Initially called C with classes by stroustroup
 class --> extension of structures (in C)
 structures had limitations (members are public and no methods)
 classes --> structures + more
@@ -52,7 +52,7 @@ void binary::chk_bin(void)
 
 void binary::ones_compliment(void)
 {
-    chk_bin();  // Nesting of memebr function
+    chk_bin();  // Nesting of memeber function
     for (int i = 0; i < s.length(); i++)
     {
         if (s.at(i) == '0')
@@ -73,7 +73,7 @@ void binary::ones_compliment(void)
 void binary::display(void)
 {
     cout << "Displaying your binary number" << endl;
-    for (int i = 1; i < s.length(); i++)
+    for (int i = 0; i < s.length(); i++)
     {
         cout << s.at(i);
     }

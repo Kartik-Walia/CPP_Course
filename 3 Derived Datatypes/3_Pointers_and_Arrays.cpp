@@ -1,4 +1,4 @@
-// Name of array itself is a pointer which stores address of 1st emmeber of array 
+// Name of array itself is a pointer which stores address of 1st member of array 
 // int a=3;
 // &a -> adddress of a 
 // int marks[4];
@@ -7,7 +7,7 @@
 
 // =========================================== POINTER ARITHMETIC ===========================================
 // On incrementing pointer by 1, it gives starting address of second block 
-// p++ pr p+1 -> gives starting address of 2nd block 
+// p++ or p+1 -> gives starting address of 2nd block 
 // p+2 -> gives starting address of 3rd block 
 // p+3 -> gives starting address of 4th block 
 // BASIC FORMULA : address_new = address__current + i*sizeof(data_type)

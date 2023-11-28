@@ -5,61 +5,51 @@
 #include <iostream>
 using namespace std;
 
-class Base1
-{
+class Base1 {
 public:
-    void greet()
-    {
+    void greet() {
         cout << "How are you?" << endl;
     }
 };
 
-class Base2
-{
+class Base2 {
 public:
-    void greet()
-    {
+    void greet() {
         cout << "Kaise ho?" << endl;
     }
 };
 
-class Derived : public Base1, public Base2
-{
+class Derived : public Base1, public Base2 {
     int a;
 
-public: // Method to resolve ambiguity (using scope resolution operator)
-    void greet()
-    {
+public:
+    // Method to resolve ambiguity (using scope resolution operator)
+    void greet() {  
         Base2 ::greet(); // It shopuld use greet() of class Base2
     }
 };
 
-class B
-{
+class B {
 public:
-    void say()
-    {
+    void say() {
         cout << "Hello world" << endl;
     }
 };
 
-class D : public B
-{
+class D : public B {
     int a;
     // D's new say() method will override base class's say() method
 public:
     // Ambiguity is resolved all by itself
     // If we write a function with same name as in base class, then it gets overridden by derived class
-    void say()
-    {
+    void say() {
         cout << "Hello my beautiful people" << endl;
     }
     // If the above part wasn't there, then it inherits say of Base class B, 
-    // and if we defines say in this class, then it overrides 
+    // and if we define say method in this class, then it overrides 
 };
 
-int main()
-{
+int main() {
     // Ambiguity 1 (Real Ambiguity Resolution)
     Base1 base1obj;
     Base2 base2obj;

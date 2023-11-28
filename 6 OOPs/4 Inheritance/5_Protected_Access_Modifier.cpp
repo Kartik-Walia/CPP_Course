@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Base
-{
+class Base {
 protected: // protected means : just like private variable, but it can be inherited
     int a;
 
@@ -24,12 +23,9 @@ Trick to Remember :
 # protected derivation : everything protected
 */
 
-class Derived : protected Base
-{
-};
+class Derived : protected Base {};
 
-int main()
-{
+int main() {
     Base b;
     Derived d;
     // cout<<d.a; // Will not work since 'a' is protected in both base as well as derived class

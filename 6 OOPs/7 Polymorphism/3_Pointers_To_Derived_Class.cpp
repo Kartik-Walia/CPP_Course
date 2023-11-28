@@ -65,7 +65,7 @@ int main()
     return 0;
 }
 
-// We can tell befor eby just looking that to which display function it would bind
+// We can tell before by just looking that to which display function it would bind
 // But compiler decision about which display function would run is taken at run time and this is know as
 // Runtime Polymorphism
 

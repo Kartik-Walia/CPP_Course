@@ -14,7 +14,7 @@ union money
     float pounds;
     // Let say int takes 4 bytes, char takes 1 bytes, float takes 4 bytes, then in case of structure the memory
     // allocated to it would be 9 bytes where as in case of union the memory allocated to it would be 4 bytes
-    // Union allocates the maximum memory among all entities bcoz you wnat to use 1 at a time
+    // Union allocates the maximum memory among all entities bcoz you want to use 1 at a time
 };
 
 int main()

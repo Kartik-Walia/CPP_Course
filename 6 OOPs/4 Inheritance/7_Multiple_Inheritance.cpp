@@ -7,47 +7,39 @@
 #include <iostream>
 using namespace std;
 
-class Base1
-{
+class Base1 {
 protected:
     int base1int;
 
 public:
-    void set_base1int(int a)
-    {
+    void set_base1int(int a) {
         base1int = a;
     }
 };
 
-class Base2
-{
+class Base2 {
 protected:
     int base2int;
 
 public:
-    void set_base2int(int a)
-    {
+    void set_base2int(int a) {
         base2int = a;
     }
 };
 
-class Base3
-{
+class Base3 {
 protected:
     int base3int;
 
 public:
-    void set_base3int(int a)
-    {
+    void set_base3int(int a) {
         base3int = a;
     }
 };
 
-class Derived : public Base1, public Base2, public Base3
-{
+class Derived : public Base1, public Base2, public Base3 {
 public:
-    void show()
-    {
+    void show() {
         cout << "The value of Base1 is " << base1int << endl;
         cout << "The value of Base2 is " << base2int << endl;
         cout << "The value of Base3 is " << base3int << endl;
@@ -68,8 +60,7 @@ Member Functions:
     set_show() --> public
 */
 
-int main()
-{
+int main() {
     Derived harry;
     harry.set_base1int(25);
     harry.set_base2int(5);

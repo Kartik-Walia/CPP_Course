@@ -1,7 +1,7 @@
 INHERITANCE IN C++ OVERVIEW 
 - Reusability is a very important feature of OOPs 
 - In C++ we can reuse a class and add additional features to it 
-- Resuing class saves time and money 
+- Reusing class saves time and money 
 - Reusing already tested and debugged class will save lot of effort of developing and debugging the same thing 
 
 
@@ -9,7 +9,7 @@ WHAT IS INHERITANCE IN C++ ?
 - The concept of reusability in C++ is supported using Inheritance 
 - We can reuse the properties of an existing class by inheriting from it 
 - The existing class is called as the Base class 
-- The new class whic is inherited is called as the Derived class 
+- The new class which is inherited is called as the Derived class 
 
 
 SYMBOLS IN DIAGRAMATIC REPRESENTATION OF INHERITANCE 

@@ -3,8 +3,8 @@
 
 // Convert only those function to inline which takes less no. of lines in code
 
-// If we make big functions inline, then there wont be space available in your cache
-// Your program size will increase so much in memory that sintead of advantage it would give uh disadvantage
+// If we make big functions inline, then there won't be space available in your cache
+// Your program size will increase so much in memory that instead of advantage it would give uh disadvantage
 
 // WHEN NOT TO USE INLINE FUNCTIONS ?
 // - Recursion
@@ -42,8 +42,8 @@ float moneyRecieved(int currentMoney, float factor = 1.04)
 }
 
 // =========================================== CONSTANT ARGUMENTS ===========================================
-// Constant argument is used to make accidently function won't be able to change the value
-// This is mostl of times valid for reference variables and pointers (when you pass arguments by reference)
+// Constant argument is used so that accidently function won't be able to change the value
+// This is most of times valid for reference variables and pointers (when you pass arguments by reference)
 // int strlen(const char *p){  // I don't want function to change my string accidently!
 // }
 

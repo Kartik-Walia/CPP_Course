@@ -2,18 +2,15 @@
 using namespace std;
 
 // Base Class
-class Employee
-{
+class Employee {
 public:
     int id;
     float salary;
-    Employee(int inpId)
-    {
+    Employee(int inpId) {
         id = inpId;
         salary = 34.0;
     }
     Employee() {}
-    // Whenever u call derived class, automatically base class constructor is called, so make sure that
     // NOTE : On creating a derived class base class constructor is automatically called, so default 
     // base class constructor should be declared (if base class has a constructor already)
 };
@@ -36,23 +33,19 @@ VISIBILITY-MODE (Default : Private)
 */
 
 // Creating a Programmer class derived from Employee Base class
-class Programmer : public Employee
-{
+class Programmer : public Employee {
 public:
     int languageCode;
-    Programmer(int inpId)
-    {
+    Programmer(int inpId) {
         id = inpId;     // Error if id was private member of base class Employee (Private can't be inherited)
         languageCode = 9;
     }
-    void getData()
-    {
+    void getData() {
         cout << id << endl;
     }
 };
 
-int main()
-{
+int main() {
     Employee harry(1), rohan(2);
     cout << harry.salary << endl;
     cout << rohan.salary << endl;

@@ -3,8 +3,7 @@
 #include <iostream>
 using namespace std;
 
-class Base
-{
+class Base {
     int data1; // private by default and is not inheritable
 public:
     int data2;
@@ -13,50 +12,43 @@ public:
     int getData2();
 };
 
-void Base ::setData(void)
-{
+void Base ::setData(void) {
     data1 = 10;
     data2 = 20;
 }
 
-int Base::getData1()
-{
+int Base::getData1() {
     return data1;
 }
 
-int Base::getData2()
-{
+int Base::getData2() {
     return data2;
 }
 
-class Derived : private Base
-{ // Class is being derived privately (can be called in process() & display() functions)
+class Derived : private Base {
+    // Class is being derived privately (can be called in process() & display() functions)
     // data2; setData(); getData1(); getData2(); can be called only within the class itself, not outside
     int data3;
 
-public: // Can call private members of the class inside these functions (as they're part of class)
+public: // Can call private members of the derived class inside these functions (as they're part of class)
     void process();
     void display();
-    // Inside these methods, private methods of Derived class can be called 
 };
 
-void Derived ::process()
-{
+void Derived ::process() {
     setData();
     data3 = data2 * getData1();
 }
 
-void Derived ::display()
-{
+void Derived ::display() {
     cout << "Value of data 1 is " << getData1() << endl;
     cout << "Value of data 2 is " << data2 << endl;
     cout << "Value of data 3 is " << data3 << endl;
 }
 
-int main()
-{
+int main() {
     Derived der;
-    // der.setData();   // Error bco setData() is private member of Derived class 
+    // der.setData();   // Error bcoz setData() is private member of Derived class 
     der.process();
     der.display();
 

@@ -8,7 +8,7 @@ One name many forms
 TYPES OF POLYMORPHISM 
 1. Compile Time Polymorphism 
     Decision about which function to call is taken in compile time itself 
-    Also known as Early (or Static) Binding 
+    Also known as "Early (or Static) Binding" 
     Binding means which object will call which function 
     Binding is done in compile time 
 
@@ -20,6 +20,6 @@ TYPES OF POLYMORPHISM
     After compilinmg, when you will execute program, then you would get to know which function is about to run 
     according to the type of your pointer
     No binding takes place in runtime polymorphism
-    Also known as Late Binding
+    Also known as "Late (or Dynamic) Binding"
 
     In C++, Run Time Polymorphism is achieved with help of virtual functions 

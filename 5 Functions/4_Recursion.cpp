@@ -33,7 +33,7 @@ int fact(int n)
 // fact(4) = 4 * 3 * 2 * 1 = 24;
 
 // ====================================== RECURSIVE APPROACH (FIBONACCI) ======================================
-int fib(int n){
+int fib(int n){ // n means no. of terms
     // base case 
     if(n<2){
         return 1;

@@ -1,5 +1,5 @@
 /*
-THERE ARE # TYPES OF LOOPS IN C++
+THERE ARE 3 TYPES OF LOOPS IN C++
 1. For Loop
 2. While Loop
 3. do-While Loop

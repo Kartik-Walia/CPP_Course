@@ -4,7 +4,7 @@ using namespace std;
 // =========================================== STATIC VARIABLES ===========================================
 // We're unable to calculate no. of employees as each object has it's own count
 // So, we cannot pass count from 1 object to another, this issue is solved with help of static variable
-// Static variable isn't written inside of class, it's written outside class
+// Static variable isn't written inside of class, it's written outside class but declared inside class
 // Memory of static variable isn't associated with object, it's associated with class
 // Thatshwy static variables are also known as "Class variables"
 // Thatswhy static variable is declared outisde the class
@@ -12,7 +12,8 @@ using namespace std;
 // Static varibale is shared among all objects fo the class
 // Here, harry, rohan & lovish share the same count variable
 // You need to write static variables at both places inside and outside the class
-// but you can only intilize it's avleu outside the class
+// but you can only intilize it's value outside the class (which is by default 0)
+
 
 // ============================================ STATIC FUNCTIONS ============================================
 // Static function is created to access value of static members
