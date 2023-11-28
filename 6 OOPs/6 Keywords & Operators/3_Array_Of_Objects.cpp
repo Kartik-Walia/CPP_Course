@@ -1,27 +1,23 @@
 #include <iostream>
 using namespace std;
 
-class ShopItem
-{
+class ShopItem {
     int id;
     float price;
 
 public:
-    void setData(int a, float b)
-    {
+    void setData(int a, float b) {
         id = a;
         price = b;
     }
 
-    void getData(void)
-    {
+    void getData(void) {
         cout << "The code of this item is " << id << endl;
         cout << "The price of this item is " << price << endl;
     }
 };
 
-int main()
-{
+int main() {
     int size = 3;
     // int *ptr=&size;
     // int *ptr = new int[34];
@@ -36,8 +32,7 @@ int main()
 
     int p;
     float q;
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++) {
         cout << "Enter Id and price of item " << i + 1 << endl;
         cin >> p >> q;
         // (*ptr).setData(p,q);
@@ -46,8 +41,7 @@ int main()
     }
     // After running for last item ptr goes to something beyond we know, so we create ptrTemp
 
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++) {
         cout << "Item number: " << i + 1 << endl;
         ptrTemp->getData();
         ptrTemp++;

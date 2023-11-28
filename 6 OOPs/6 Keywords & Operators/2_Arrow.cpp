@@ -1,40 +1,36 @@
 #include <iostream>
 using namespace std;
 
-class Complex
-{
+class Complex {
     int real, imaginary;
 
 public:
-    void getData()
-    {
-        cout << "The real part is " << real << endl;
-        cout << "The imagianry part is " << imaginary << endl;
-    }
-
-    void setData(int a, int b)
-    {
+    void setData(int a, int b) {
         real = a;
         imaginary = b;
     }
+
+    void getData() {
+        cout << "The real part is " << real << endl;
+        cout << "The imagianry part is " << imaginary << endl;
+    }
 };
 
-int main()
-{
+int main() {
     Complex c1;
     c1.setData(1, 54);
     c1.getData();
 
     // Creating pointer which points to this object
     Complex *ptr = &c1;
-    (*ptr).setData(1, 54); // Accessing public memebrs of object through pointer via dereferencing operator
+    (*ptr).setData(1, 54); // Accessing public members of object through pointer via dereferencing operator
     (*ptr).getData();      // Bracket is compulsary bcoz . operator has higher precedence than * operator
 
     // We can also directly create object
     Complex *ptr1 = new Complex;
     (*ptr1).setData(1, 54);
     // (*ptr1).getData();
-    ptr1->getData(); // Exactly same as above (ptr jis object ko point kr rha hai uska setData function run)
+    ptr1->getData(); // Exactly same as above (ptr jis object ko point kr rha hai uska getData function run)
     // Arrow operator is used to run function of pointer by directly dereferencing the pointer
 
     // Array of Objects
