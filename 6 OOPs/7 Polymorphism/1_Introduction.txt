@@ -16,8 +16,8 @@ TYPES OF POLYMORPHISM
     A. Function Overloading 
     B. Operator Overloading 
 2. Run Time Polymorphism 
-    Compiler postpones dicsion of which function to call i.e. It defers the linking of function call in runtime
-    After compilinmg, when you will execute program, then you would get to know which function is about to run 
+    Compiler postpones decision of which function to call i.e. It defers the linking of function call in runtime
+    After compiling, when you will execute program, then you would get to know which function is about to run 
     according to the type of your pointer
     No binding takes place in runtime polymorphism
     Also known as "Late (or Dynamic) Binding"

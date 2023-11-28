@@ -1,7 +1,7 @@
 // ========================================== PURE VIRTUAL FUNCTION ==========================================
 // If a virtual function defined in base class, there is no necessity of redefining it in the derived class, Means
 // that if display function isn't found in Derived class, then being virtual it will run display of Base class
-// But mai chahta hun ki ek aisa virtual function bna na jiska naya version aapko derived class mei bna na he pde
+// But mai chahta hun ek aisa virtual function bnana jiska new version aapko derived class mei bnana he pde
 
 // =========================================== ABSTRACT BASE CLASS ===========================================
 // Abstract base class is a class which has atleast 1 pure virtual function
@@ -20,15 +20,13 @@
 #include <cstring>
 using namespace std;
 
-class CWH
-{
+class CWH {
 protected:
     string title;
     float rating;
 
 public:
-    CWH(string s, float r)
-    {
+    CWH(string s, float r) {
         title = s;
         rating = r;
     }
@@ -36,7 +34,7 @@ public:
     virtual void display() = 0; // do-nothing function --> Pure Virtual Function
     // Iske kehne ka matlab yeh hai ki koi aisi derived class nah bnjaye jo meri re-defination nah kre
 
-    // NOTE : If pure virtual function is defined in base class, it is necesssry to redefine it in derived class
+    // NOTE : If pure virtual function is defined in base class, it is necessary to redefine it in derived class
     // This means yeh class bani he isliye hai taaki iss se derive hoke aur classes bne
 
     // Ab pointer toh aap bna skte ho iska aur point beshak CWHText or CWHVideo ko krvao, runtime polymorphism krao
@@ -44,42 +42,35 @@ public:
     // override krdena(krna he pdega aapko)
 };
 
-class CWHVideo : public CWH
-{
+class CWHVideo : public CWH {
     float videoLength;
 
 public:
-    CWHVideo(string s, float r, float vl) : CWH(s, r)
-    {
+    CWHVideo(string s, float r, float vl) : CWH(s, r) {
         videoLength = vl;
     }
-    void display()
-    {
+    void display() {
         cout << "This is an amazing video with title " << title << endl;
         cout << "Ratings: " << rating << " out of 5 stars" << endl;
         cout << "Length of this video is " << videoLength << " minutes" << endl;
     }
 };
 
-class CWHText : public CWH
-{
+class CWHText : public CWH {
     int words;
 
 public:
-    CWHText(string s, float r, int wc) : CWH(s, r)
-    {
+    CWHText(string s, float r, int wc) : CWH(s, r) {
         words = wc;
     }
-    void display()
-    {
+    void display() {
         cout << "This is an amazing text tutorial with title " << title << endl;
         cout << "Ratings of this text tutorial: " << rating << " out of 5 stars" << endl;
         cout << "No. of words in this text tutorial is " << words << " words" << endl;
     }
 };
 
-int main()
-{
+int main() {
     string title;
     float rating, vlen;
     int words;

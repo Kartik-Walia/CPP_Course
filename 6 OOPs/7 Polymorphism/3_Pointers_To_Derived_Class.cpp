@@ -10,7 +10,7 @@ because it is the pointer of the base class not the derived class
 C++ ka rule hai agar aapka Base class ka pointer hai aur aapne usko Derived class se bhi point kradia, toh
 aap agar uss pointer ki sahayeta se display function run kroge toh voh Base class ka run hoga
 
-Base class pointer when pointed to Derived class, can only access those properties of Drived class which
+Base class pointer when pointed to Derived class, can only access those properties of Derived class which
 are inherited from Base class
 
 */
@@ -18,22 +18,18 @@ are inherited from Base class
 #include <iostream>
 using namespace std;
 
-class BaseClass
-{
+class BaseClass {
 public:
     int var_base;
-    void display()
-    {
+    void display() {
         cout << "Displaying Base class variable var_base " << var_base << endl;
     }
 };
 
-class DerivedClass : public BaseClass
-{
+class DerivedClass : public BaseClass {
 public:
     int var_derived;
-    void display()
-    {
+    void display() {
         cout << "Displaying Base class variable var_base " << var_base << endl;
         cout << "Displaying Derived class variable var_derived " << var_derived << endl;
     }
@@ -51,7 +47,7 @@ int main()
 
     // base_class_pointer->ver_derived = 134;  // Invalid
     // Agar aapne ek Base class ka pointer bnaya aur aapne derived class se point krvadiya, toh sirf aap Base
-    // class se jo prioperties aur methods inherit hui hain, unhi ko access kr skte ho
+    // class se jo properties aur methods inherit hui hain, unhi ko access kr skte ho
 
     base_class_pointer->var_base = 3400;
     base_class_pointer->display();

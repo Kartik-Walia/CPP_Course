@@ -11,7 +11,7 @@
 // tarah ke message ko respond krte hain, here it's display function
 
 // If method of base class is made virtual, then with help of base class type pointer pointing to derived
-// class, you can run inherited method
+// class, you can run inherited methods only (not the other methods of derived class)
 // With this runtime polymorphism is achieved
 // Bcoz the binding of function happens at runtime means actual compiler binds i.e. associates object with
 // function address is done at runtime
@@ -19,8 +19,7 @@
 #include <iostream>
 using namespace std;
 
-class BaseClass
-{
+class BaseClass {
 public:
     int var_base = 1;
     // void display()
@@ -29,25 +28,21 @@ public:
     // }
 
     // Making display function of Base class virtual
-    virtual void display()
-    {
+    virtual void display() {
         cout << "1 Displaying Base class variable var_base " << var_base << endl;
     }
 };
 
-class DerivedClass : public BaseClass
-{
+class DerivedClass : public BaseClass {
 public:
     int var_derived = 2;
-    void display()
-    {
+    void display() {
         cout << "2 Displaying Base class variable var_base " << var_base << endl;
         cout << "2 Displaying Derived class variable var_derived " << var_derived << endl;
     }
 };
 
-int main()
-{
+int main() {
     BaseClass *base_class_pointer;
     BaseClass obj_base;
     DerivedClass obj_derived;
