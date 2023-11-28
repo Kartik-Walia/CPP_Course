@@ -6,7 +6,7 @@ If class A has a member named 'a', then B & C will also inherit A
 Question is when D inherits from classes B & C, then it would take 2 instances of member 'a'
 
 Virtual Base Class is solution of above case 
-To solve this what we shoudl do is, make sure when someone in future takes a from both B and C, then check 
+To solve this what we should do is, make sure when someone in future takes a from both B and C, then check 
 if there's already another instance of 'a' bcoz there must be only 1 instance of 'a'
 To do this, we declare A as virtual base classe while declaring classes B & C 
 We derived classes B & C with A as virtual base class 
@@ -16,6 +16,6 @@ class B : virtual public A {};
 class C : virtual public A {};
 
 This saves us from duplication and ambiguity 
-When we made class B and class C, then we said that give me a as a virtual base class 
+When we made class B and class C, then we said that give me A as a virtual base class 
 
-What we did is, we made D indirectly from A such that we got only copy of 'a' in class D 
+What we did is, we made D indirectly from A such that we got only 1 copy of 'a' in class D 

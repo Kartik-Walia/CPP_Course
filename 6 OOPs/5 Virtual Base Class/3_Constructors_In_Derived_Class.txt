@@ -30,5 +30,5 @@ SPECIAL CASE OF VIRTUAL BASE CLASS
 - The constructors of virtual base classes are invoked before an non-virtual base class 
 - If there are multiple virtual base classes, they're invoked in the order declared (as per previous rules)
 - Any non-virtual base classes are then constructed before the derived class constructor is executed, this 
-    simple means firstly constructor of all vritual base classes are invoked, then comes turn of non-virtual
+    simple means firstly constructor of all virtual base classes are invoked, then comes turn of non-virtual
     base classes

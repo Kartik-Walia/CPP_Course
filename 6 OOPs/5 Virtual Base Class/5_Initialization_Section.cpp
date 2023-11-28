@@ -10,8 +10,7 @@ constructor (argumnent-list) : initialization-section {
     assignment + other code;
 }
 
-class Test
-{
+class Test {
     int a;
     int b;
 
@@ -25,8 +24,7 @@ Above code assigns a=i & b=j
 
 */
 
-class Test
-{
+class Test {
     int a;  // a is declared before b, so a should be initializd before b 
     int b;
 
@@ -40,18 +38,16 @@ public:
     // This will give error bcoz a is initilized first (till then b contains garbage value)
     // To get correct value of this, you need to declare b before a 
 
-    Test(int i, int j) : a(i)   // This also works well
-    {
+    Test(int i, int j) : a(i) {   // This also works well 
         b =j;
         cout << "Constructor Executed" << endl;
-        cout<<"Value of a is "<<a<<endl;
-        cout<<"Value of b is "<<b<<endl;
+        cout << "Value of a is " << a << endl;
+        cout << "Value of b is " << b << endl;
     }
     
 };
 
-int main()
-{
+int main() {
     Test t(4,6);
 
     return 0;
