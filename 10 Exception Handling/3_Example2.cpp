@@ -2,20 +2,23 @@
 using namespace std;
 
 int main() {
-    int num, denum, output;
-    cout << "Please enter the numbers(numerator then denominator) for division" << endl;
-    cin >> num;
-    cin >> denum;
-
     try {
-        if (denum == 0) {
-            throw denum;
-        } else {
-            output = num / denum;
-            cout << "The output after the division is: " << output << endl;
+        int numerator, denominator, result;
+        cout << "Enter numerator: ";
+        cin >> numerator;
+        cout << "Enter denominator: ";
+        cin >> denominator;
+
+        if (denominator == 0) {
+            throw runtime_error("Division by zero is not allowed.");
         }
-    } catch (int d) {
-        cout << "Devision by 0 isn't possible" << endl;
+
+        result = numerator / denominator;
+        cout << "Result: " << result << endl;
+    } catch (const exception &e) {
+        cerr << "Exception caught: " << e.what() << endl;
+    } catch (...) {
+        cerr << "Unknown exception caught." << endl;
     }
 
     return 0;
